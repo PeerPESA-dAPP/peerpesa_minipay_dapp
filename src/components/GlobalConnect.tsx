@@ -6,6 +6,9 @@ import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { providers } from "ethers";
 
 import "@rainbow-me/rainbowkit/styles.css";
+
+
+
 import { parseUnits, zeroAddress } from "viem";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import {
@@ -54,20 +57,18 @@ import { Link } from 'react-router-dom';
 import Networks from '../utils/networks';
 
 
-const ConnectWebWallet: React.FC<ConnectWalletProps> = ({ chain }) => {
+const GlobalConnect: React.FC<ConnectWalletProps> = ({ chain }) => {
+  
   const NetworkCollection: any = useMemo(() => Networks, []);   
-  //const { connected, publicKey, disconnect } = useWallet();
   const [walletDetails, setWalletDetails] = useState({ address: '', chain: '', username: '' });
   //const [dropdownOpen, setDropdownOpen] = useState(false);
-  
+  //const { connected, publicKey, disconnect } = useWallet();
   const [selectedNetwork, setSelectedNetwork] = useState('');
-  
   
   const handleNetworkChange = async (event: any) => {
     setSelectedNetwork(event.target.value);
     await handleConnect();
   };
-
 
   const handleConnect = () => {
     if (selectedNetwork) {
@@ -148,9 +149,6 @@ const ConnectWebWallet: React.FC<ConnectWalletProps> = ({ chain }) => {
         }
     };
     
-
-
-
     //   const initConnection = () => {
     //       try{
     //             let WEB3_PROVIDER_URL= "https://your-web3-provider-url";
@@ -182,19 +180,17 @@ const ConnectWebWallet: React.FC<ConnectWalletProps> = ({ chain }) => {
     //     // toast.error('No Solana wallet found. Please install Phantom Wallet.');
     //   }
     //   initConnection();
-
     // }, [connected, publicKey, chain]);
 
     // const handleLogout = () => {
-    //     disconnect();
-    //     setWalletDetails({ address: '', chain: '', username: '' });
+    //    disconnect();
+    //    setWalletDetails({ address: '', chain: '', username: '' });
     // };
-
     // const handleCopyAddress = () => {
     //     navigator.clipboard.writeText(walletDetails.address);
     //     toast.success('Address copied to clipboard!');
     // };
-
+    
     return (
         <div>
             
@@ -243,4 +239,4 @@ const SolanaProvider: React.FC<SolanaProviderProps> = ({ children }) => {
     );
 };
 
-export { ConnectWebWallet, SolanaProvider };
+export { GlobalConnect, SolanaProvider };
