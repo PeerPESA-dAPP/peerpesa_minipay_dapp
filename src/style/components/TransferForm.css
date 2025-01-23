@@ -1,0 +1,381 @@
+.card {
+  /* background-color: #f0fff4; */
+  background-color: transparent;
+  padding: 0;
+  border-radius: 15px;
+}
+
+.card-login {
+  background-color: #f0fff4;
+  padding: 2rem;
+  border-radius: 15px 20px 20px 15px;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 768px) {
+  .card-login {
+    background-color: #f0fff4;
+    background: transparent;
+    background: transparent;
+    padding: 2rem;
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.text-center-content {
+  margin: 20px 0;
+  padding: 0;
+  h3 {
+    font-size: 1.3rem;
+    color: #1e1e1e;
+    padding: 1px 0;
+    font-weight: 600;
+    line-height: 3.1rem;
+  }
+}
+
+.text-center-content-2 {
+  margin: 10px 0 0 0;
+  padding: 0;
+  p {
+    font-size: 1rem;
+    color: #1e1e1e;
+    padding: 1px 0 0 0;
+    font-weight: 600;
+    span {
+      color: #39b662;
+      cursor: pointer;
+    }
+    .nav-link {
+      color: #39b662;
+      cursor: pointer;
+    }
+  }
+}
+
+.title {
+  font-size: 2.3rem;
+  color: #1e1e1e;
+  text-align: left;
+  padding: 10px 0;
+  font-weight: 800;
+  line-height: 3.2rem;
+  text-align: center;
+}
+.highlight {
+  color: #00a86b;
+  color: rgb(110, 231, 150);
+  color: #ffffff;
+  color: rgba(147, 149, 152, 1);
+  color: #00a86b;
+  color: #1e1e1e;
+  font-weight: bold;
+  text-align: left;
+}
+
+.section-inner {
+  padding: 0 1.7rem;
+  text-align: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 768px) {
+  .section-inner {
+    padding: 0 0.7rem !important;
+  }
+
+  .card {
+    background-color: #f0fff4;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding: 0;
+  }
+
+  .small-hide {
+    display: none;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+  }
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #1e1e1e;
+  line-height: auto;
+  text-align: left;
+  padding: 10px 10%;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .payment-details {
+    padding: 0;
+    margin: 10px 0 0 0;
+    p {
+      font-size: 14px;
+      width: 100%;
+      text-align: left;
+      padding: 5px 0;
+      b {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.input,
+.select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+.summary {
+  font-size: 0.9rem;
+  color: #333;
+}
+.send-button {
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+  background-color: rgb(0, 168, 107);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin: 3px 0 0 0;
+    /* border: 2px solid red; 
+    float: left; */
+  }
+}
+
+.button-snap {
+  max-width: 28px;
+  height: 28px;
+  margin: 5px 12px 0 0;
+  padding: 0;
+  /* border:    2px solid red;   
+  float:     left; */
+}
+
+.form-inputs {
+  width: 100%;
+  label {
+    font-size: 14px;
+    width: 100%;
+    font-weight: 700;
+    text-align: left;
+    padding: 5px 0;
+    color: #89d99d;
+    display: block;
+  }
+  .selection,
+  .selection:focus,
+  .selection:active,
+  .selection:visited {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.sell-currency,
+.buy-currency {
+  width: 100%;
+  border: 2px solid #1e1e1e;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+  background: #ffffff;
+  position: relative;
+  label {
+    font-size: 14px;
+    width: 100%;
+    font-weight: 700;
+    text-align: left;
+    padding: 5px 0;
+    color: #89d99d;
+    display: block;
+  }
+
+  .selection,
+  .selection:active,
+  .selection:visited {
+    font-size: 16px;
+    text-align: left;
+    border: 9;
+    outline: none;
+    width: 55%;
+    float: right;
+    margin-top: 7px;
+    border: 22.5px solid #1e1e1e;
+    position: absolute;
+    right: 0;
+    top: -7px;
+    border-radius: 0 18px 18px 0;
+    background: #1e1e1e;
+  }
+  .input,
+  .input:active,
+  .input:visited {
+    font-size: 16px;
+    text-align: left;
+    outline: none;
+    width: 55%;
+    float: left;
+    border: 0px solid transparent;
+  }
+
+  div {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #ffffff;
+    outline: none;
+
+    input,
+    input:focus,
+    input:active {
+      color: #ffffff;
+      outline: none;
+      z-index: 400;
+    }
+  }
+
+  .selection:focus,
+  .selection:hover {
+    font-size: 16px;
+    text-align: left;
+    border: 9;
+    outline: none;
+    width: 55%;
+    float: right;
+    margin-top: 7px;
+    border: 24.5px solid #1e1e1e;
+    position: absolute;
+    right: 0;
+    top: -7px;
+    border-radius: 0 18px 18px 0;
+    background: #1e1e1e;
+
+    div {
+      background: #1e1e1e;
+      border: 0px solid transparent;
+      color: #ffffff;
+      outline: none;
+      input,
+      input:focus,
+      input:hover,
+      input:active {
+        border: 0px solid transparent;
+        color: #ffffff;
+        outline: none;
+      }
+    }
+  }
+  .input:focus {
+    font-size: 14px;
+    text-align: left;
+    outline: none;
+    width: 55%;
+    float: left;
+    border: 0px solid transparent;
+  }
+}
+
+.selection-payment-method {
+  width: 100%;
+  border: 2px solid #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+
+  .selection-other,
+  .selection-other:focus,
+  .selection-other:active,
+  .selection-other:visited {
+    font-size: 16px;
+    text-align: left;
+    border: 9;
+    outline: none;
+    width: 100%;
+    margin: 0;
+    right: 0;
+    border-radius: 0 18px 18px 0;
+    border: 0px solid transparent;
+    outline: none;
+
+    div,
+    div:focus {
+      border: 0px solid transparent;
+      outline: none;
+    }
+
+    input,
+    input:focus,
+    input:active,
+    input:visited {
+      font-size: 16px;
+      text-align: left;
+      outline: none;
+      width: 55%;
+      float: left;
+      border: 0px solid transparent;
+    }
+  }
+}
+
+/* styles.css */
+.selection__control {
+  background-color: #f0f0f0; /* Select box background */
+  border: 1px solid #ccc;
+}
+
+.selection__option {
+  background-color: #fff;
+  color: #000;
+}
+
+.selection__option--is-focused {
+  background-color: #d3e2f1; /* Option hover background */
+}
+
+.selection__menu {
+  background-color: #f9f9f9; /* Dropdown menu background */
+}

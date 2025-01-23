@@ -1,0 +1,168 @@
+.dashboard-block {
+  padding: 30px 15px;
+}
+
+.total-wallet-balance-section {
+  padding-left: 20px;
+}
+
+/* 
+.total-wallet-balance{
+    border: 2px solid red;
+} */
+
+.sub-title-section {
+  color: #ffffff;
+  margin: 3px 0 0 0;
+  padding: 0;
+  float: left;
+  display: inline;
+  font-size: 18px;
+}
+
+.sub-amount-section {
+  color: #ffffff;
+  margin: 0;
+  padding: 5px 0;
+  float: left;
+  font-size: 26px;
+}
+
+.closed-eye-border-open {
+  margin: 3px;
+  float: left;
+  position: relative;
+}
+
+.the-drop-for-options {
+  position: absolute;
+  width: 120px;
+  padding: 5px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #000000;
+
+  p {
+    text-align: left;
+    padding: 5px 10px;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+
+    span {
+      width: 100%;
+      text-align: left;
+      display: block;
+      font-size: 14px;
+      margin: 0;
+      padding: 3px 0;
+      color: #000000;
+    }
+  }
+}
+
+.rotate-180 {
+  transform: rotate(180deg) !important;
+}
+
+.rotate-180 {
+  transform: rotate(180deg) !important;
+}
+
+.rotate-90 {
+  transform: rotate(90deg) !important;
+}
+
+.rotate-270 {
+  transform: rotate(270deg) !important;
+}
+
+.the-button-here-selected {
+  padding: 4px 20px;
+}
+
+.content-dash-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+
+  .the-button-here {
+    display: inline;
+    width: auto;
+    cursor: pointer;
+
+    .the-button-here-selected-icon {
+      width: 52px;
+      padding: 18px;
+      border-radius: 52px;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .the-button-here-selected-text {
+      width: 100%;
+      text-align: center;
+      display: block;
+      font-size: 14px;
+      margin: 0;
+      padding: 3px 0;
+      color: #ffffff;
+    }
+  }
+}
+
+/* 
+
+   
+.content-dash-buttons{
+
+    the-button-here-selected
+     
+       border: 1px solid red;
+       .the-button-here-selected-text{
+
+       }
+
+
+        .the-button-here-selected-icon{
+            font-size: 24px;
+        }        
+   } */
+
+.content-dash-buttons-2 {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+
+  .the-button-here {
+    display: inline;
+    width: auto;
+    cursor: pointer;
+
+    .the-button-here-selected-icon {
+      width: 42px;
+      padding: 18px;
+      border-radius: 52px;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .the-button-here-selected-icon:hover {
+      background: rgb(0, 168, 107, 0.45) !important;
+    }
+
+    .the-button-here-selected-text {
+      width: 100%;
+      text-align: center;
+      display: block;
+      font-size: 14px;
+      margin: 0;
+      padding: 3px 0;
+      color: #ffffff;
+    }
+  }
+}
+
+.the-button-here-selected-icon-active {
+  background: #00a86b !important;
+}

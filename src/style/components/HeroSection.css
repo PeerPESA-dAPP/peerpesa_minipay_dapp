@@ -1,0 +1,112 @@
+.section {
+  /*
+  display: flex;
+  flex-direction: column;
+*/
+  align-items: center;
+  padding: 3rem 1rem;
+  background: rgba(147, 149, 152, 0.2);
+  background-color: #7ef29b;
+  margin: 0 auto;
+  margin: 30px 55px;
+  border-radius: 20px;
+}
+
+.dark-section {
+  align-items: center;
+  padding: 0;
+  background: #1e1e1e;
+}
+
+.section-dark-text {
+  padding: 0 10%;
+}
+
+.tagline {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #00a86b;
+  font-weight: bold;
+}
+
+.highlight-lower {
+  color: #89d99d;
+  font-weight: bold;
+}
+
+.dark-title {
+  font-size: 2.8rem;
+  color: #6ee796;
+  text-align: left;
+  padding: 10px 0;
+  font-weight: 800;
+  line-height: 3.8rem;
+}
+
+.dark-highlight {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.account-details {
+  position: fixed;
+  right: 20px;
+  top: 78px;
+  background-color: #ffffff;
+  z-index: 80;
+
+  p {
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+    padding: 15px 20px 15px 15px;
+    font-weight: 400;
+    cursor: pointer;
+
+    span {
+      border: 1px solid #ffffff;
+      padding: 0;
+      display: inline-block;
+    }
+  }
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem 1rem;
+    margin: 20px 25px;
+  }
+
+  .tagline {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .dark-title {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+  }
+
+  .account-details {
+    position: fixed;
+    right: 20px;
+    top: 68px;
+  }
+}
+
+.nav-link-drop-down {
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0;
+  outline: none;
+  text-decoration: none;
+  display: block;
+}

@@ -1,0 +1,153 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+
+  a {
+    color: #000000 !important;
+    text-decoration: none;
+    outline: none;
+  }
+  a:hover {
+    color: #00a86b !important;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #00a86b;
+}
+
+.logo-snap {
+  max-width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+.buy-snap {
+  max-width: 22px;
+  height: 22px;
+  margin: 0 12px 0 0;
+  padding: 0;
+}
+.menu-snap {
+  max-width: 32px;
+  height: 32px;
+  margin: 0 4px 0 4px;
+  padding: 0;
+}
+
+.menu-snap-drop-menu {
+  max-width: 26px;
+  height: 26px;
+  margin: 0 8px 0 4px;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  z-index: 3000;
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #00a86b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-non-bg {
+  border: 0;
+  margin-left: 15px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hide-menu-tab {
+  display: none;
+  height: 0;
+  visibility: hidden;
+}
+
+.show-small-screen {
+  display: none;
+  visibility: hidden;
+}
+
+.show-big-screen {
+  display: auto;
+  visibility: visible;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 768px) {
+  .show-small-screen {
+    display: inline-block;
+    visibility: visible;
+    max-height: 60px;
+  }
+
+  .show-big-screen {
+    display: none;
+    visibility: hidden;
+    max-height: 60px;
+  }
+
+  .nav {
+    padding: 0.4rem 1rem;
+  }
+
+  .hide-menu-tab {
+    display: inline;
+    height: auto;
+    visibility: visible;
+  }
+
+  .hide_show_menu {
+    display: none;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .nav-links {
+    position: fixed;
+    display: block !important;
+    left: 0;
+    padding: 5px 20px 20px 20px;
+    top: 65px;
+    width: 100%;
+    background: #ffffff;
+
+    .nav-link {
+      display: block !important;
+      width: 100% !important;
+      padding: 9px 10px;
+    }
+  }
+
+  .side-menu-section {
+    text-align: end;
+    flex-flow: row wrap;
+    align-content: flex-end;
+  }
+
+  .buy-snap-hide-small {
+    display: none;
+    height: 0;
+    visibility: hidden;
+  }
+}

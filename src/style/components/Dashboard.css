@@ -1,0 +1,27 @@
+.main-dashboard-section {
+  margin: 0;
+}
+
+.main-dashboard-section-inner {
+  padding: 0;
+  border-radius: 20px;
+}
+
+.main-dashboard-section-title {
+  padding: 10px 0 0 0;
+  .title {
+    padding: 0 20px 10px 20px;
+    color: #ffffff;
+    font-size: 22px;
+  }
+}
+
+.more-content {
+  font-weight: 400;
+  float: right;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: #6ee796;
+}
