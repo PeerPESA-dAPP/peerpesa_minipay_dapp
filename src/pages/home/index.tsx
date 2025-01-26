@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { axiosInstance } from "@/services/api";
 import Footer from "./../../components/Footer";
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 
 // import { Link } from 'react-router-dom'
 // import { Button, Spin } from 'antd'
@@ -62,7 +62,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="container flex flex-col justify-center pb-12"></div>
 
       <Footer />
