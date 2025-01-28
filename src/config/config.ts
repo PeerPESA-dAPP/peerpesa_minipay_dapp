@@ -6,14 +6,16 @@
 // };
 //6442402de332c19a8310238a4e45d959
 
-// import { http, createConfig } from 'wagmi'
+//import { http, createConfig } from 'wagmi'
 import { celo, mainnet, optimism } from "wagmi/chains";
-// import {  metaMask, injected, safe, walletConnect } from 'wagmi/connectors'
+//import {  metaMask, injected, safe, walletConnect } from 'wagmi/connectors'
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
+
+
 
 // const projectId = '6442402de332c19a8310238a4e45d959'
 
-// export const config = createConfig({
+// export const wagmiConfig = createConfig({
 //   chains: [mainnet, celo],
 //   connectors: [
 //     injected(),
@@ -28,6 +30,8 @@ import { getDefaultConfig } from "@rainbow-me/rainbowkit";
 //   },
 // })
 
+
+
 declare module "wagmi" {
   interface Register {
     config: typeof config;
@@ -39,3 +43,6 @@ export const config = getDefaultConfig({
   chains: [mainnet, optimism, celo],
   ssr: true, // If your dApp uses server side rendering (SSR)
 });
+
+
+

@@ -8,6 +8,9 @@ import { useEffect, useRef, useState } from "react";
 //import { ConnectWebWallet } from './ConnectWebWallet'; // Import the SolanaProvider and ConnectWallet components
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
+import { useConnect } from "wagmi";
+import { injected } from '@wagmi/connectors'
+
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -28,6 +31,19 @@ export default function Layout() {
   const [selectedChain, setSelectedChain] = useState<
     "solana" | "stellar" | "celo"
   >("solana");
+
+  const [hideConnectBtn, setHideConnectBtn] = useState(false);
+  const { connect } = useConnect();
+
+  useEffect(() => {
+    if (window.ethereum && window.ethereum.isMiniPay) {
+      // User is using MiniPay so hide connect wallet button.
+      setHideConnectBtn(true);
+
+      connect({ connector: injected({ target: "metaMask" }) });
+    }
+  }, []);
+
 
   useEffect(() => {
     const onScroll = () => {
@@ -121,7 +137,15 @@ export default function Layout() {
 
                 <div className="flex items-center space-x-4 margin-right-30">
                   {/* <ConnectWebWallet chain={selectedChain} /> */}
-                  <ConnectButton showBalance={true} />;
+                  {/* <ConnectButton showBalance={true} />; */}
+                  {!hideConnectBtn && (
+                    <ConnectButton
+                      showBalance={{
+                        smallScreen: true,
+                        largeScreen: false,
+                      }}
+                    />
+                  )}
                 </div>
               </div>
             </div>
